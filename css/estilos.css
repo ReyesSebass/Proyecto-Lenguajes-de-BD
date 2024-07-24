@@ -198,3 +198,101 @@ body {
 }
 
 
+/*-------------------------- Contenedor para los productos en tendencia 1-----------------------*/
+.tendencia-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Permitir que los elementos no se envuelvan */
+    margin: 20px 0;
+}
+
+.rectangle-tendencia {
+    position: relative;
+    width: 200px;
+    height: auto; /* Ajustar altura automáticamente */
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column; /* Alinear contenido en columna */
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px; /* Añadir espacio interno */
+    text-align: center; /* Centrar el texto */
+}
+
+.rectangle-tendencia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.rectangle-tendencia img {
+    width: 100%;
+    height: auto; /* Ajustar altura automáticamente */
+    object-fit: contain; /* Contener la imagen dentro del cuadro */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.rectangle-tendencia h1 {
+    font-size: 18px; /* Tamaño de la fuente más pequeño */
+    color: #ffffff; /* Color del texto */
+    margin: 10px 0 5px 0; /* Margen alrededor del título */
+}
+
+.rectangle-tendencia .price {
+    font-size: 24px; /* Tamaño de la fuente del precio */
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color del precio */
+}
+
+/* --------------------------Contenedor para los productos en tendencia 2------------------------------*/
+.tendencia-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Permitir que los elementos no se envuelvan */
+    margin: 20px 0;
+}
+
+.rectangle-tendencia2 {
+    position: relative;
+    width: 200px;
+    height: auto; /* Ajustar altura automáticamente */
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column; /* Alinear contenido en columna */
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px; /* Añadir espacio interno */
+    text-align: center; /* Centrar el texto */
+}
+
+.rectangle-tendencia2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.rectangle-tendencia2 img {
+    width: 100%;
+    height: auto; /* Ajustar altura automáticamente */
+    object-fit: contain; /* Contener la imagen dentro del cuadro */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.rectangle-tendencia2 h1 {
+    font-size: 18px; /* Tamaño de la fuente más pequeño */
+    color: #ffffff; /* Color del texto */
+    margin: 10px 0 5px 0; /* Margen alrededor del título */
+}
+
+.rectangle-tendencia2 .price {
+    font-size: 24px; /* Tamaño de la fuente del precio */
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color del precio */
+}
+
