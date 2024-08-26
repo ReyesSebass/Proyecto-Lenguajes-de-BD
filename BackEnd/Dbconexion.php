@@ -1,15 +1,24 @@
 <?php
-$username = '';
-$password = '';
-$dbname = '';
-$hostname = '';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-//Establecer la conexion
-$conn = oci_connect($username, $passwor, $hostname;);
+$username = 'Administrador';
+$password = 'Administrador';
+$dbname = 'orcl';
+$hostname = 'localhost';
 
-if(!$conn){
+
+$connString = "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=$hostname)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=$dbname)))";
+
+
+$conn = oci_connect($username, $password, $connString);
+
+if (!$conn) {
     $e = oci_error();
-    echo htmlentities($e['message'], ENT_QUOTES);
+    echo "Error de conexión: " . htmlentities($e['message'], ENT_QUOTES);
     exit;
+} else {
+    echo "ORACLE DATABASE CONNECTED SUCCESSFULLY!!!";
 }
 ?>
