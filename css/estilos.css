@@ -296,3 +296,83 @@ body {
     color: #ffffff; /* Color del precio */
 }
 
+/* --------------------------About US------------------------------*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Color de fondo negro */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+.navbar {
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0;
+    left: 0; /* Agregado para centrar horizontalmente */
+    right: 0; /* Agregado para centrar horizontalmente */
+    width: 100%;
+    background-color: #333; /* Color de fondo para la barra de navegación */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; /* Agregado para centrar automáticamente */
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar img {
+    height: 75px;
+    margin-right: 10px; /* Espacio entre el logo y el campo de búsqueda */
+}
+
+/* Asegura que la barra de búsqueda se ajuste correctamente */
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+.auth {
+    display: flex;
+    gap: 10px; /* Espacio entre los elementos de autenticación */
+}
+
+.about-container {
+    background-color: #333; /* Fondo gris oscuro para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Espacio superior para no quedar cubierto por la barra de navegación */
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-image: url('./img/logo-sin-fondo.png');
+  }
+
+.about-text p {
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 10px 0; /* Ajuste de márgenes */
+}
