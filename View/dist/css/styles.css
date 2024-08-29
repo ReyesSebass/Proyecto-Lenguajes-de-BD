@@ -1,0 +1,14 @@
+.TextoCentrado
+{
+    text-align:center;
+}
+
+.content-wrapper
+{
+    background-color: white!important;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: transparent;
+    border: 0px;
+  }
